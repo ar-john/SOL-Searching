@@ -1,0 +1,23 @@
+{
+  "name": "sol-searching",
+  "version": "1.0.0",
+  "description": "Project repository for CSI 3370",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ar-john/SOL-Searching.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ar-john/SOL-Searching/issues"
+  },
+  "homepage": "https://github.com/ar-john/SOL-Searching#readme"
+}
