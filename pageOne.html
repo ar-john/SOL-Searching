@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <title>Sol Searching</title>
+</head>
+    
+
+
+<body>
+
+<div id="header">
+    <h1>Sol Searching</h1>
+    <h2>Price of Solana: $219.09</h2>
+</div>
+        <div id="navbar"> 
+            <ul> 
+	       <li><a href="Popup.html">TAB1</a></li>  
+	       <li><a href="pageOne.html">TAB2</a></li>
+           <li><a href="">TAB3</a></li>
+           <li><a href="">TAB4</a></li>
+            </ul> 
+        </div>
+    
+        <div id="content2">
+        <h1>Collection Name Here</h1>
+        <table class="table table-striped">
+        <tr  class="bg-info">
+        <th></th>
+        </tr>
+        <tbody id="myTable">
+        </tbody>
+        </table>
+        </div>
+    
+    
+    <div class="footer">
+        <p>footer stuff goes here</p>
+        <p>CSI3370</p>
+    </div>
+
+<script>
+var myArray = {
+"NFTImage": [
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/2574.png",
+   "NFTPrice": "22",
+   "NFTInfo": "Aurorian #2575\nAurory\n22\nLast\n23.00"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/8971.png",
+   "NFTPrice": "23",
+   "NFTInfo": "Aurorian #8972\nAurory\n23"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/2599.png",
+   "NFTPrice": "23",
+   "NFTInfo": "Aurorian #2600\nAurory\n23"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/909.png",
+   "NFTPrice": "23.5",
+   "NFTInfo": "Aurorian #910\nAurory\n23.5"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/5285.png",
+   "NFTPrice": "23.6",
+   "NFTInfo": "Aurorian #5286\nAurory\n23.6"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/9370.png",
+   "NFTPrice": "24",
+   "NFTInfo": "Aurorian #9371\nAurory\n24\nLast\n22.00"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/9225.png",
+   "NFTPrice": "24",
+   "NFTInfo": "Aurorian #9226\nAurory\n24\nLast\n18.25"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/8296.png",
+   "NFTPrice": "24",
+   "NFTInfo": "Aurorian #8297\nAurory\n24"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/2770.png",
+   "NFTPrice": "24",
+   "NFTInfo": "Aurorian #2771\nAurory\n24"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/2820.png",
+   "NFTPrice": "24",
+   "NFTInfo": "Aurorian #2821\nAurory\n24"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/9790.png",
+   "NFTPrice": "24.2",
+   "NFTInfo": "Aurorian #9791\nAurory\n24.2\nLast\n29.40"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/6504.png",
+   "NFTPrice": "24.37",
+   "NFTInfo": "Aurorian #6505\nAurory\n24.37\nLast\n40.00"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/9349.png",
+   "NFTPrice": "24.5",
+   "NFTInfo": "Aurorian #9350\nAurory\n24.5\nLast\n21.00"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/6588.png",
+   "NFTPrice": "24.9",
+   "NFTInfo": "Aurorian #6589\nAurory\n24.9\nLast\n21.00"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/7967.png",
+   "NFTPrice": "24.99",
+   "NFTInfo": "Aurorian #7968\nAurory\n24.99"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/857.png",
+   "NFTPrice": "25",
+   "NFTInfo": "Aurorian #858\nAurory\n25\nLast\n51.00"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/4591.png",
+   "NFTPrice": "25",
+   "NFTInfo": "Aurorian #4592\nAurory\n25\nLast\n37.50"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/6687.png",
+   "NFTPrice": "25",
+   "NFTInfo": "Aurorian #6688\nAurory\n25\nLast\n56.00"
+  },
+  {
+   "image": "https://data.solanart.io/img/aurory/AuroryProject/4415.png",
+   "NFTPrice": "25",
+   "NFTInfo": "Aurorian #4416\nAurory\n25"
+  }
+ ]
+}            
+	buildTable(myArray)
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+		for (var i = 0; i < myArray.NFTImage.length; i++){          
+var row = 
+`<tr>
+<td><img src=${myArray.NFTImage[i].image}></td>
+</tr>`
+var row2 = 
+`<tr>
+<td>${myArray.NFTImage[i].NFTInfo}</td>
+</tr>`
+var row3 = 
+`<tr>
+<td>${myArray.NFTImage[i].NFTPrice}</td>
+</tr>`
+
+table.innerHTML += row
+table.innerHTML += row2
+table.innerHTML += row3
+        }
+}
+</script>
+</body>
+</html>
